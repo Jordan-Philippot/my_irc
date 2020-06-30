@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "hansolov3";
+    src: url("Fonts/Fonts/hansolov3.woff") format("woff");
+}
+@font-face {
+    font-family: "Neoneon";
+    src: url("Fonts/Neoneon.woff") format("woff");
+}
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(45, 45, 45);
+    // cursor: none;
+}
+
+/* |||||||||||||||||||||||     HEADER & FOOTER COMPONENT   ||||||||||||||||||| */
+.navbar-brand {
+    font-family: "hansolov3";
+    color: rgb(218, 218, 218);
+    font-size: 40px;
+    padding: 15px 3vw;
+}
+.collapse {
+    justify-content: end;
+    margin-right: 1vw;
+}
+.nav-link {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-right: 5vw;
+}
+footer {
+    position: absolute;
+    bottom: 1;
+    margin-left: 42vw;
+    margin-top: 35px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+}
+
+/* |||||||||||||||||||||||     HOMEPAGE COMPONENT   ||||||||||||||||||| */
+.connect {
+    background-color: rgb(233, 233, 233);
+    height: 40vh;
+    margin-top: 18vh;
+    padding: 40px 60px;
+    h1 {
+        text-align: center;
+        font-family: "Neoneon";
+        color: rgb(167, 167, 167);
+        letter-spacing: 1px;
+    }
+    .bodyConnect {
+        display: flex;
+        flex-direction: column;
+        label {
+            margin-top: 5vh;
+            margin-left: 10px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        input {
+            border-radius: 25px;
+            background-color: transparent;
+            padding: 10px 20px;
+            border: 1px solid lightgray;
+            &::placeholder {
+                font-size: 10px;
+            }
+        }
+        .termConnect {
+            font-size: 10px;
+            margin: 15px 0 30px 20px;
+            font-weight: 100;
+            font-family: "Inter", sans-serif;
+        }
+        button {
+            width: 27%;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: bold;
+            height: 35px;
+            margin-right: 15px;
+            padding: 5px;
+            background-color: rgb(60, 60, 60);
+            font-family: "Inter", sans-serif;
+        }
+    }
+}
+
+/* |||||||||||||||||||||||     CHANNEL COMPONENT   ||||||||||||||||||| */
+.entierePage {
+    width: 98vw;
+    .modal-content{
+        background-color: rgb(255, 255, 255);
+        color: rgb(63, 63, 63);
+        // width: 30vw;
+        .modal-body{    
+            font-family: "Oswald", sans-serif;
+        }
+    }
+  
+    .channelComponent {
+        h1 {
+            font-family: "Oswald", sans-serif;
+            margin-bottom: 20px;
+            text-align: center;
+            color: rgb(220, 220, 220);
+            font-weight: bold;
+        }
+        .tchatContainer {
+            background-color: rgb(233, 233, 233);
+            height: 60vh;
+            padding: 0;
+            #modalBtn {
+                position: relative;
+                float: right;
+                width: 40px;
+            }
+            .messagesContainer {
+                padding: 20px;
+                overflow-y: auto;
+                height: 85%;
+            }
+            .sendContainer {
+                width: 100%;
+                background-color: rgb(95, 95, 95);
+                position: absolute;
+                bottom: 0;
+                padding: 10px 5%;
+                button {
+                    border-radius: 35px;
+                    background-color: rgb(75, 75, 75);
+                    color: white;
+                    font-size: 15px;
+                    width: 17%;
+                    font-weight: bold;
+                }
+                input {
+                    width: 70%;
+                    border-radius: 25px;
+                    margin-left: 50px;
+                    padding: 5px 25px;
+                    background-color: rgb(187, 187, 187);
+                    &::placeholder {
+                        font-family: "Inter", sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* |||||||||||||||||||||||     MESSAGE COMPONENT   ||||||||||||||||||| */
+.messageGreyComponent {
+    position: relative;
+    float: left;
+    text-align: left;
+    .messageGreyBlock {
+        display: inline-block;
+        font-family: "Oswald", sans-serif;
+        background-color: rgb(179, 179, 179);
+        color: white;
+        font-weight: bold;
+        border-radius: 35px;
+        padding: 10px 20px 2px 20px;
+        border: 1px solid rgb(88, 88, 88);
+        font-size: 13px;
+    }
+    .messageGreynameContainer {
+        margin-top: 5px;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+}
+.messageComponent {
+    position: relative;
+    float: right;
+    text-align: right;
+    .messageBlock {
+        display: inline-block;
+        font-family: "Oswald", sans-serif;
+        font-size: 13px;
+        background-color: rgb(0, 140, 255);
+        color: white;
+        font-weight: bold;
+        border-radius: 35px;
+        padding: 10px 20px 2px 20px;
+        border: 1px solid rgb(88, 88, 88);
+    }
+    .messagenameContainer {
+        margin-top: 5px;
+        margin-right: 15px;
+        font-size: 12px;
+    }
+}
+
+/* |||||||||||||||||||||||     LATERAL COMPONENT   ||||||||||||||||||| */
+.lateralComponent {
+    text-align: center;
+    height: 75vh;
+    background-color: rgb(53, 53, 53);
+    border-radius: 5px;
+    padding: 25px 5px;
+    .channelLateral {
+        margin-bottom: 30px;
+        height: 45%;
+        overflow-y: auto;
+    }
+    .userLateral{
+        height: 45%;
+        overflow-y: auto;
+    }
+    h5 {
+        font-family: "Oswald", sans-serif;
+        margin-bottom: 20px;
+        color: lightgray;
+        font-weight: bold;
+    }
+    hr {
+        background-color: rgb(100, 100, 100);
+        margin-bottom: 45px;
+    }
+    p {
+        font-family: "Jura", sans-serif;
+        color: lightgray;
+        font-weight: bold;
+    }
+}

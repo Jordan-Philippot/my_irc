@@ -1,0 +1,290 @@
+@font-face {
+  font-family: "hansolov3";
+  src: url("Fonts/Fonts/hansolov3.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Neoneon";
+  src: url("Fonts/Neoneon.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #2d2d2d;
+}
+
+/* |||||||||||||||||||||||     HEADER & FOOTER COMPONENT   ||||||||||||||||||| */
+.navbar-brand {
+  font-family: "hansolov3";
+  color: #dadada;
+  font-size: 40px;
+  padding: 15px 3vw;
+}
+
+.collapse {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-right: 1vw;
+}
+
+.nav-link {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-right: 5vw;
+}
+
+footer {
+  position: absolute;
+  bottom: 1;
+  margin-left: 42vw;
+  margin-top: 35px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+/* |||||||||||||||||||||||     HOMEPAGE COMPONENT   ||||||||||||||||||| */
+.connect {
+  background-color: #e9e9e9;
+  height: 40vh;
+  margin-top: 18vh;
+  padding: 40px 60px;
+}
+
+.connect h1 {
+  text-align: center;
+  font-family: "Neoneon";
+  color: #a7a7a7;
+  letter-spacing: 1px;
+}
+
+.connect .bodyConnect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.connect .bodyConnect label {
+  margin-top: 5vh;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.connect .bodyConnect input {
+  border-radius: 25px;
+  background-color: transparent;
+  padding: 10px 20px;
+  border: 1px solid lightgray;
+}
+
+.connect .bodyConnect input::-webkit-input-placeholder {
+  font-size: 10px;
+}
+
+.connect .bodyConnect input:-ms-input-placeholder {
+  font-size: 10px;
+}
+
+.connect .bodyConnect input::-ms-input-placeholder {
+  font-size: 10px;
+}
+
+.connect .bodyConnect input::placeholder {
+  font-size: 10px;
+}
+
+.connect .bodyConnect .termConnect {
+  font-size: 10px;
+  margin: 15px 0 30px 20px;
+  font-weight: 100;
+  font-family: "Inter", sans-serif;
+}
+
+.connect .bodyConnect button {
+  width: 27%;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: bold;
+  height: 35px;
+  margin-right: 15px;
+  padding: 5px;
+  background-color: #3c3c3c;
+  font-family: "Inter", sans-serif;
+}
+
+/* |||||||||||||||||||||||     CHANNEL COMPONENT   ||||||||||||||||||| */
+.entierePage {
+  width: 98vw;
+}
+
+.entierePage .modal-content {
+  background-color: white;
+  color: #3f3f3f;
+}
+
+.entierePage .modal-content .modal-body {
+  font-family: "Oswald", sans-serif;
+}
+
+.entierePage .channelComponent h1 {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+  color: gainsboro;
+  font-weight: bold;
+}
+
+.entierePage .channelComponent .tchatContainer {
+  background-color: #e9e9e9;
+  height: 60vh;
+  padding: 0;
+}
+
+.entierePage .channelComponent .tchatContainer #modalBtn {
+  position: relative;
+  float: right;
+  width: 40px;
+}
+
+.entierePage .channelComponent .tchatContainer .messagesContainer {
+  padding: 20px;
+  overflow-y: auto;
+  height: 85%;
+}
+
+.entierePage .channelComponent .tchatContainer .sendContainer {
+  width: 100%;
+  background-color: #5f5f5f;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 5%;
+}
+
+.entierePage .channelComponent .tchatContainer .sendContainer button {
+  border-radius: 35px;
+  background-color: #4b4b4b;
+  color: white;
+  font-size: 15px;
+  width: 17%;
+  font-weight: bold;
+}
+
+.entierePage .channelComponent .tchatContainer .sendContainer input {
+  width: 70%;
+  border-radius: 25px;
+  margin-left: 50px;
+  padding: 5px 25px;
+  background-color: #bbbbbb;
+}
+
+.entierePage .channelComponent .tchatContainer .sendContainer input::-webkit-input-placeholder {
+  font-family: "Inter", sans-serif;
+}
+
+.entierePage .channelComponent .tchatContainer .sendContainer input:-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+}
+
+.entierePage .channelComponent .tchatContainer .sendContainer input::-ms-input-placeholder {
+  font-family: "Inter", sans-serif;
+}
+
+.entierePage .channelComponent .tchatContainer .sendContainer input::placeholder {
+  font-family: "Inter", sans-serif;
+}
+
+/* |||||||||||||||||||||||     MESSAGE COMPONENT   ||||||||||||||||||| */
+.messageGreyComponent {
+  position: relative;
+  float: left;
+  text-align: left;
+}
+
+.messageGreyComponent .messageGreyBlock {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  background-color: #b3b3b3;
+  color: white;
+  font-weight: bold;
+  border-radius: 35px;
+  padding: 10px 20px 2px 20px;
+  border: 1px solid #585858;
+  font-size: 13px;
+}
+
+.messageGreyComponent .messageGreynameContainer {
+  margin-top: 5px;
+  margin-left: 15px;
+  font-size: 12px;
+}
+
+.messageComponent {
+  position: relative;
+  float: right;
+  text-align: right;
+}
+
+.messageComponent .messageBlock {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  font-size: 13px;
+  background-color: #008cff;
+  color: white;
+  font-weight: bold;
+  border-radius: 35px;
+  padding: 10px 20px 2px 20px;
+  border: 1px solid #585858;
+}
+
+.messageComponent .messagenameContainer {
+  margin-top: 5px;
+  margin-right: 15px;
+  font-size: 12px;
+}
+
+/* |||||||||||||||||||||||     LATERAL COMPONENT   ||||||||||||||||||| */
+.lateralComponent {
+  text-align: center;
+  height: 75vh;
+  background-color: #353535;
+  border-radius: 5px;
+  padding: 25px 5px;
+}
+
+.lateralComponent .channelLateral {
+  margin-bottom: 30px;
+  height: 45%;
+  overflow-y: auto;
+}
+
+.lateralComponent .userLateral {
+  height: 45%;
+  overflow-y: auto;
+}
+
+.lateralComponent h5 {
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 20px;
+  color: lightgray;
+  font-weight: bold;
+}
+
+.lateralComponent hr {
+  background-color: #646464;
+  margin-bottom: 45px;
+}
+
+.lateralComponent p {
+  font-family: "Jura", sans-serif;
+  color: lightgray;
+  font-weight: bold;
+}
+/*# sourceMappingURL=index.css.map */
