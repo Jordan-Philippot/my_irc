@@ -18,6 +18,6 @@
     "mongodb-autoincrement": "^1.0.1",
     "mongoose": "^5.9.17",
     "morgan": "~1.9.1",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   }
 }
